@@ -8,6 +8,12 @@ let h3 = document.querySelector('h3');
 let btn = ['green','blue','red','yellow'];
 let highscore = localStorage.getItem('highscore') || 0;
 
+let mobile = document.querySelector(".mob-start");
+mobile.addEventListener('click',function(){
+    start = true;
+    levelup();
+})
+
 document.addEventListener('keypress',function (){
     if(start == false){
         console.log("Game is started.");
